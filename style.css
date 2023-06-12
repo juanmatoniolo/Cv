@@ -1,0 +1,121 @@
+*{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+a{
+    text-decoration: none;
+}
+/*======================HEADER =============================*/
+.cabecera-cv{
+    color: #000;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+
+}
+
+
+
+
+/*======================SECTION DATOS =============================*/
+.datos-basicos{
+    display: flex;
+    width: 75%;
+    padding-left: 15px;
+    border: 1px solid black;
+    border-radius: 12px;
+    margin: auto;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+.icono-datos-basicos{
+    margin-top: 6px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: start;
+    align-items: center;
+    font-size: 24px;
+}
+
+.foto-datos{
+width: 85%;
+}
+/*======================SECTION DESCRIPCION =============================*/
+
+.descripcion{
+    font-size: 18px;
+}
+
+.formacion-academica{
+    margin-top: 3em;
+
+}
+.formacion-academica-h2{
+    margin-bottom: 1em;
+}
+
+.otras-formaciones{
+    margin-top: 3em;
+    margin-bottom: 2em;
+}
+
+.otras-formaciones-h2{
+    margin-bottom: 1em;
+}
+
+
+
+.porfolio-programacion-h3{
+    
+    margin-top: 1.5em;
+    margin-bottom: .5em;
+}
+h6{
+    margin: 16px;
+}
+
+/*=========== ADAPTACION PARA CELULAR  ===========*/
+@media (max-width: 575px) {
+
+/*======================SECTION DATOS =============================*/
+.datos-basicos{
+    display: flex;
+    width: 95%;
+    padding-left: 5px;
+    border: 1px solid black;
+    border-radius: 12px;
+    margin: auto;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+.icono-datos-basicos{
+    margin-top: 4px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: start;
+    align-items: center;
+    font-size: small;
+}
+p{
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+.contactos{
+    width: 60%
+}
+.img-perfil{
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+.foto-datos{
+    width: 100%;
+    object-fit: cover;
+
+}
+
+}

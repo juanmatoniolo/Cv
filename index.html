@@ -1,210 +1,771 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es-AR">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./stilo.css">
+		<!----LINK DE ICONOS GOOGLE-->
+		<link
+			rel="stylesheet"
+			href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+		/>
+		<!--Link de bootstrap -->
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+		/>
 
-    <!--script de boostrap--> 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <!----------------------->
-    <title>TONIOLO JUAN MANUEL</title>
-</head>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+			crossorigin="anonymous"
+		></script>
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+			crossorigin="anonymous"
+		/>
+		<!--NoScript por las dudas --->
+		<noscript>
+			<h1>¡ADVERTENCIA!</h1>
+			<h2>No tiene activado el lector de JS en su navegador</h2>
+			<h2>Sino no lo activa no podra visualizar el contenido</h2>
+		</noscript>
 
-<body>
-    <header>
-        <div class="container">
-            <h1><strong>TONIOLO JUAN MANUEL</strong></h1>
-        </div>
-    </header>
+		<link rel="stylesheet" href="style.css" />
+		<link rel="shortcut icon" href="./img/icono.png" type="image/x-icon" />
+		<title>Toniolo Juan Manuel</title>
+	</head>
 
-    <div class="linea">
-        <hr>
-    </div>
+	<body>
+		<header>
+			<div class="cabecera-cv">
+				<h1>TONIOLO JUAN MANUEL</h1>
+			</div>
+		</header>
 
-    <div class="container">
-        <!-- Datos personales y fotos-->
-        <div class="row">
-            <div class="col-sm-8">
-                <h2 class="datos">DATOS:</h2>
-                <ul>
-                    <li><strong>Edad:</strong> 27 años </li>
-                    <li><strong>Telefono:</strong> <a href="https://wa.me/+5493412275598">3412275598</a> </li>
-                    <li><strong>Email: </strong> <a
-                            href="mailto:juanmatoniolo2@gmail.com?Subject=Estamos%20interesados%20en%20su%20servicio">
-                            juanmatoniolo2@gmail.com</a></li>
-                    <li><strong>Ciudad: </strong> Rosario, Santa Fe</li>
-                    <li><strong>Direccion:</strong> Sarmiento 846</li>
-                    <li><strong>Disponibilidad: </strong> Full time</li>
-                </ul>
+		<nav
+			class="navbar text-center navbar-light navbar-expand-sm container-fluid nav-cv"
+		>
+			<div class="container-fluid nav-dad">
+				<button
+					class="navbar-toggler nav-font nav-boton-movil col-3 collapsed"
+					type="button"
+					data-bs-toggle="collapse"
+					data-bs-target="#navbarSupportedContent"
+					aria-controls="navbarSupportedContent"
+					aria-expanded="false"
+					aria-label="Toggle navigation"
+				>
+					<span class="navbar-toggler-icon"></span>
+				</button>
+
+				<div
+					class="navbar-collapse nav-son-2 collapse"
+					id="navbarSupportedContent"
+				>
+					<ul class="navbar-nav nav-dad-ul me-auto mb-2 mb-lg-0">
+						<li class="nav-item nav-font nav-son-ul">
+							<a
+								class="nav-link active nav-font nav-son-ul-1"
+								aria-current="page"
+								href="#"
+								>Home</a
+							>
+						</li>
+						<li class="nav-item nav-font nav-son-ul">
+							<a
+								class="nav-link active nav-font nav-son-ul-2"
+								aria-current="page"
+								href="#perfil"
+								>Perfil</a
+							>
+						</li>
+						<li class="nav-item nav-font nav-son-ul">
+							<a
+								class="nav-link active nav-font nav-son-ul-2"
+								aria-current="page"
+								href="#acedemia"
+								>Formacion</a
+							>
+						</li>
+						<li class="nav-item nav-font nav-son-ul">
+							<a
+								class="nav-link active nav-font nav-son-ul-1"
+								aria-current="page"
+								href="#formaciones"
+								>Otras formaciones</a
+							>
+						</li>
+						<li class="nav-item nav-font nav-son-ul">
+							<a
+								class="nav-link active nav-font nav-son-ul-3"
+								aria-current="page"
+								href="#experiencia"
+								>Experiencias
+							</a>
+						</li>
+                        <li class="nav-item nav-font nav-son-ul">
+							<a
+								class="nav-link active nav-font nav-son-ul-2"
+								aria-current="page"
+								href="#porfolio"
+								>Porfolio</a
+							>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+		<main>
+			<!-----  DATOS   ----->
+			<section class="datos-basicos">
+				<div class="contactos">
+					<p class="bi bi-person-circle icono-datos-basicos">
+						&#160;27 años
+					</p>
+					<a
+						href="https://wa.me/+5493412275598?text=Estamos%20interesados%20en%20su%20servicio"
+						target="_blank"
+						class="bi bi-phone icono-datos-basicos"
+					>
+						&#160;341-2275598</a
+					>
+					<p class="bi bi-building icono-datos-basicos">
+						&#160;Rosario, Santa Fe
+					</p>
+					<p class="bi bi-signpost-fill icono-datos-basicos">
+						&#160;Sarmiento 846
+					</p>
+					<p class="bi bi-briefcase icono-datos-basicos">
+						&#160;Disponibilidad full-time
+					</p>
+					<a
+						href="mailto:juanmatoniolo2@gmail.com?Subject=Estamos%20interesados%20en%20su%20servicio"
+						target="_blank"
+						class="bi bi-envelope-check icono-datos-basicos"
+					>
+						&#160;juanmatoniolo2@gmail.com
+					</a>
+				</div>
+
+				<div class="img-perfil">
+					<img
+						src="./img/juanma-foo.png"
+						alt="Foto frente de la persona"
+						class="img-fluid foto-datos"
+					/>
+				</div>
+			</section>
+			<!-----  DESCRIPCION   ----->
+
+			<section class="descripcion container" id="perfil">
+				<article>
+					<h2>PERFIL</h2>
+					<p>
+						Estoy en búsqueda de un buen ambiente laboral, en el
+						cual se me permita crecer y aprender nuevos
+						conocimientos. Soy una persona autodidacta y me adapto
+						rápidamente al entorno y las tecnologías. Tengo un
+						manejo de varias herramientas como
+						<a href="./pestanias//pothoshop.html">Photoshop</a>,
+						paquete de office, Git y
+						<a
+							href="https://github.com/juanmatoniolo"
+							target="_blank"
+							>Github</a
+						>, sistemas operativos de Windows y algunos Linuxs, y un
+						emprendimiento en el cual me encargo de arreglar
+						computadoras y otro en el que realizo
+						<a href="https://smartpet-rosaro.000webhostapp.com/"
+							>colgantes para mascotas</a
+						>.
+					</p>
+				</article>
+			</section>
+			<!-----  FORMACION ACADEMICA   ----->
+
+			<section class="formacion-academica container" id="acedemia">
+				<h2 class="formacion-academica-h2">FORMACION ACADEMICA</h2>
+				<div class="accordion" id="accordionExample">
+					<div class="accordion-item">
+						<h2 class="accordion-header" id="headingOne">
+							<button
+								class="accordion-button"
+								type="button"
+								data-bs-toggle="collapse"
+								data-bs-target="#collapseOne"
+								aria-expanded="true"
+								aria-controls="collapseOne"
+							>
+								Universidad actual:
+							</button>
+						</h2>
+						<div
+							id="collapseOne"
+							class="accordion-collapse collapse show"
+							aria-labelledby="headingOne"
+							data-bs-parent="#accordionExample"
+						>
+							<div class="accordion-body">
+								<strong
+									>Analista Universitario en Sistema UNR (2021
+									– actualidad)</strong
+								>
+							</div>
+						</div>
+					</div>
+					<div class="accordion-item">
+						<h2 class="accordion-header" id="headingTwo">
+							<button
+								class="accordion-button collapsed"
+								type="button"
+								data-bs-toggle="collapse"
+								data-bs-target="#collapseTwo"
+								aria-expanded="false"
+								aria-controls="collapseTwo"
+							>
+								Universidad en pausa
+							</button>
+						</h2>
+						<div
+							id="collapseTwo"
+							class="accordion-collapse collapse"
+							aria-labelledby="headingTwo"
+							data-bs-parent="#accordionExample"
+						>
+							<div class="accordion-body">
+								<strong
+									>Derecho UNR – Abogacía (2015 a
+									2020)</strong
+								>
+							</div>
+						</div>
+					</div>
+					<div class="accordion-item">
+						<h2 class="accordion-header" id="headingThree">
+							<button
+								class="accordion-button collapsed"
+								type="button"
+								data-bs-toggle="collapse"
+								data-bs-target="#collapseThree"
+								aria-expanded="false"
+								aria-controls="collapseThree"
+							>
+								Secundario
+							</button>
+						</h2>
+						<div
+							id="collapseThree"
+							class="accordion-collapse collapse"
+							aria-labelledby="headingThree"
+							data-bs-parent="#accordionExample"
+						>
+							<div class="accordion-body">
+								<strong
+									>Instituto Marista D-87 (2008-2013)</strong
+								>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-----  OTROS ESTUDIOS   ----->
+
+			<section class="otras-formaciones container" id="formaciones">
+				<h2 class="otras-formaciones-h2">OTRAS FORMACIONES</h2>
+				<div class="accordion" id="accordionPanelsStayOpenExample">
+					<div class="accordion-item">
+						<h2
+							class="accordion-header"
+							id="panelsStayOpen-headingSix"
+						>
+							<button
+								class="accordion-button collapsed"
+								type="button"
+								data-bs-toggle="collapse"
+								data-bs-target="#panelsStayOpen-collapseSix"
+								aria-expanded="true"
+								aria-controls="panelsStayOpen-collapseSix"
+							>
+								NODE JS
+							</button>
+						</h2>
+						<div
+							id="panelsStayOpen-collapseSix"
+							class="accordion-collapse collapse"
+							aria-labelledby="panelsStayOpen-headingSix"
+						>
+							<div class="accordion-body">
+								<strong
+									>En curso. Academia: "Codo a Codo"</strong
+								>
+								<p>Temas abordados hasta ahora:</p>
+								<p>
+									Front-end: javascrip en general,
+									manipulacion del DOM, consultas, promesas,
+									consumo de API
+								</p>
+								<p>
+									Back-end: comenzamos con la parte de
+									servidores
+								</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="accordion-item">
+						<h2
+							class="accordion-header"
+							id="panelsStayOpen-headingOne"
+						>
+							<button
+								class="accordion-button"
+								type="button"
+								data-bs-toggle="collapse"
+								data-bs-target="#panelsStayOpen-collapseOne"
+								aria-expanded="false"
+								aria-controls="panelsStayOpen-collapseOne"
+							>
+								Lenguajes complementarios y buenas practicas
+							</button>
+						</h2>
+						<div
+							id="panelsStayOpen-collapseOne"
+							class="accordion-collapse collapse"
+							aria-labelledby="panelsStayOpen-headingOne"
+						>
+							<div class="accordion-body">
+								<strong
+									>En curso. Academia: "Potrero
+									Digital"</strong
+								>
+								<p>
+									Temas abordados: Creacion de app web. Como
+									consumir una api. Gestion de datos desde la
+									nube. Como realizar un brief
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="accordion-item">
+						<h2
+							class="accordion-header"
+							id="panelsStayOpen-headingTwo"
+						>
+							<button
+								class="accordion-button collapsed"
+								type="button"
+								data-bs-toggle="collapse"
+								data-bs-target="#panelsStayOpen-collapseTwo"
+								aria-expanded="false"
+								aria-controls="panelsStayOpen-collapseTwo"
+							>
+								Programación back-end
+							</button>
+						</h2>
+						<div
+							id="panelsStayOpen-collapseTwo"
+							class="accordion-collapse collapse"
+							aria-labelledby="panelsStayOpen-headingTwo"
+						>
+							<div class="accordion-body">
+								<strong
+									>Finalizado diciembre 2022. Academia:
+									"Potrero Digital"</strong
+								>
+								<p>Temas abordados: PHP, MySQL</p>
+							</div>
+						</div>
+					</div>
+					<div class="accordion-item">
+						<h2
+							class="accordion-header"
+							id="panelsStayOpen-headingThree"
+						>
+							<button
+								class="accordion-button collapsed"
+								type="button"
+								data-bs-toggle="collapse"
+								data-bs-target="#panelsStayOpen-collapseThree"
+								aria-expanded="false"
+								aria-controls="panelsStayOpen-collapseThree"
+							>
+								Programación Front-end
+							</button>
+						</h2>
+						<div
+							id="panelsStayOpen-collapseThree"
+							class="accordion-collapse collapse"
+							aria-labelledby="panelsStayOpen-headingThree"
+						>
+							<div class="accordion-body">
+								<strong
+									>Finalizado agosto 2022. Academia: "Potrero
+									Digital"</strong
+								>
+								<p>Temas abordados: HTML, CSS, JavaScrip</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="accordion-item">
+						<h2
+							class="accordion-header"
+							id="panelsStayOpen-headingFour"
+						>
+							<button
+								class="accordion-button collapsed"
+								type="button"
+								data-bs-toggle="collapse"
+								data-bs-target="#panelsStayOpen-collapseFour"
+								aria-expanded="false"
+								aria-controls="panelsStayOpen-collapseFour"
+							>
+								Windows desde la consola de comandos
+							</button>
+						</h2>
+						<div
+							id="panelsStayOpen-collapseFour"
+							class="accordion-collapse collapse"
+							aria-labelledby="panelsStayOpen-headingFour"
+						>
+							<div class="accordion-body">
+								<strong
+									>Finalizado 2021. Academia: "Udemy"</strong
+								>
+							</div>
+						</div>
+					</div>
+
+					<div class="accordion-item">
+						<h2
+							class="accordion-header"
+							id="panelsStayOpen-headingFive"
+						>
+							<button
+								class="accordion-button collapsed"
+								type="button"
+								data-bs-toggle="collapse"
+								data-bs-target="#panelsStayOpen-collapseFive"
+								aria-expanded="false"
+								aria-controls="panelsStayOpen-collapseFive"
+							>
+								Excel basico
+							</button>
+						</h2>
+						<div
+							id="panelsStayOpen-collapseFive"
+							class="accordion-collapse collapse"
+							aria-labelledby="panelsStayOpen-headingFive"
+						>
+							<div class="accordion-body">
+								<strong
+									>Finalizado 2021. Finalizado 2021. Academia:
+									"Udemy"</strong
+								>
+							</div>
+						</div>
+					</div>
+
+					<div class="accordion-item">
+						<h2
+							class="accordion-header"
+							id="panelsStayOpen-headingSix"
+						>
+							<button
+								class="accordion-button collapsed"
+								type="button"
+								data-bs-toggle="collapse"
+								data-bs-target="#panelsStayOpen-collapseSix"
+								aria-expanded="false"
+								aria-controls="panelsStayOpen-collapseSix"
+							>
+								Reparación de PC
+							</button>
+						</h2>
+						<div
+							id="panelsStayOpen-collapseSix"
+							class="accordion-collapse collapse"
+							aria-labelledby="panelsStayOpen-headingSix"
+						>
+							<div class="accordion-body">
+								<strong
+									>Finalizado 2021. Finalizado 2021. Academia:
+									"Udemy"</strong
+								>
+								<p>
+									Tambien realice otro curso de reparacion de
+									Pc dictado por la provincia de Santa Fe en
+									conjunto con la municipalidad de Rosario.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-----  EXPERIENCIA LABORAL   ----->
+
+			<section class="trabajos container" id="experiencia">
+				<h2>EXPERIENCIA LABORAL</h2>
+				<div
+					class="accordion accordion-flush"
+					id="accordionFlushExample"
+				>
+					<div class="accordion-item">
+						<h2 class="accordion-header" id="flush-headingOne">
+							<button
+								class="accordion-button collapsed"
+								type="button"
+								data-bs-toggle="collapse"
+								data-bs-target="#flush-collapseOne"
+								aria-expanded="false"
+								aria-controls="flush-collapseOne"
+							>
+								MARZO 2023 - ACTUALIDAD: SMART-PET.
+							</button>
+						</h2>
+						<div
+							id="flush-collapseOne"
+							class="accordion-collapse collapse"
+							aria-labelledby="flush-headingOne"
+							data-bs-parent="#accordionFlushExample"
+						>
+							<div class="accordion-body">
+								<strong></strong>
+								<p>
+									Elaboracion de colgantes identificatorios
+									para mascotas que cuentan con una base de
+									dato online. Estos vienn con QR y un chip
+									inteligente a base de NFC. Al acercar tu
+									telefono con el NFC se abre la base de
+									datos. Tambien se puede acceder escaneando
+									el QR
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="accordion-item">
+						<h2 class="accordion-header" id="flush-headingTwo">
+							<button
+								class="accordion-button collapsed"
+								type="button"
+								data-bs-toggle="collapse"
+								data-bs-target="#flush-collapseTwo"
+								aria-expanded="false"
+								aria-controls="flush-collapseTwo"
+							>
+								ENERO 2023 - MARZO 2023: REPARTIDOR PEDIDOS YA
+							</button>
+						</h2>
+						<div
+							id="flush-collapseTwo"
+							class="accordion-collapse collapse"
+							aria-labelledby="flush-headingTwo"
+							data-bs-parent="#accordionFlushExample"
+						>
+							<div class="accordion-body">
+								Repartia pedidos en bicicleta
+							</div>
+						</div>
+					</div>
+					<div class="accordion-item">
+						<h2 class="accordion-header" id="flush-headingThree">
+							<button
+								class="accordion-button collapsed"
+								type="button"
+								data-bs-toggle="collapse"
+								data-bs-target="#flush-collapseThree"
+								aria-expanded="false"
+								aria-controls="flush-collapseThree"
+							>
+								SEPTIEMBRE 2022 – DICIEMBRE 2022: AUCKLAND
+								TURISMO
+							</button>
+						</h2>
+						<div
+							id="flush-collapseThree"
+							class="accordion-collapse collapse"
+							aria-labelledby="flush-headingThree"
+							data-bs-parent="#accordionFlushExample"
+						>
+							<div class="accordion-body">
+								Coordinador de viajes de egresado, séptimo
+								grado, a la ciudad de Villa Carlos Paz. En el
+								mismo estaba a cargo del contingente y la
+								realización de todas las actividades
+								contractuales.
+							</div>
+						</div>
+					</div>
+					<div class="accordion-item">
+						<h2 class="accordion-header" id="flush-headingOne">
+							<button
+								class="accordion-button collapsed"
+								type="button"
+								data-bs-toggle="collapse"
+								data-bs-target="#flush-collapseOne"
+								aria-expanded="false"
+								aria-controls="flush-collapseOne"
+							>
+								ENERO 2022 – AGOSTO 2022: CENTRO DE SALUD DE LA
+								PROVINCIA
+							</button>
+						</h2>
+						<div
+							id="flush-collapseOne"
+							class="accordion-collapse collapse"
+							aria-labelledby="flush-headingOne"
+							data-bs-parent="#accordionFlushExample"
+						>
+							<div class="accordion-body">
+								Mi tarea es recibir a las personas, corroborar
+								su turno e indicarle por donde tiene que ir.
+								Atención al público en general.
+							</div>
+						</div>
+					</div>
+					<div class="accordion-item">
+						<h2 class="accordion-header" id="flush-headingOne">
+							<button
+								class="accordion-button collapsed"
+								type="button"
+								data-bs-toggle="collapse"
+								data-bs-target="#flush-collapseOne"
+								aria-expanded="false"
+								aria-controls="flush-collapseOne"
+							>
+								JULIO 2021 – DICIEMBRE 2021: CAJERO DE UN BAR
+							</button>
+						</h2>
+						<div
+							id="flush-collapseOne"
+							class="accordion-collapse collapse"
+							aria-labelledby="flush-headingOne"
+							data-bs-parent="#accordionFlushExample"
+						>
+							<div class="accordion-body">
+								Realizaba la apertura y cierre de la caja del
+								bar, los arqueos correspondientes y estaba a
+								cargo de que los mozos cumplan con sus
+								deberes.Tengo conocimiento del sistema Bruler.
+							</div>
+						</div>
+					</div>
+					<div class="accordion-item">
+						<h2 class="accordion-header" id="flush-headingOne">
+							<button
+								class="accordion-button collapsed"
+								type="button"
+								data-bs-toggle="collapse"
+								data-bs-target="#flush-collapseOne"
+								aria-expanded="false"
+								aria-controls="flush-collapseOne"
+							>
+								MARZO 2016 – MARZO 2019: AUCKLAND TURISMO S.R.L.
+							</button>
+						</h2>
+						<div
+							id="flush-collapseOne"
+							class="accordion-collapse collapse"
+							aria-labelledby="flush-headingOne"
+							data-bs-parent="#accordionFlushExample"
+						>
+							<div class="accordion-body">
+								Venta y coordinación de viajes de egresados.
+								Tengo conocimiento y experiencia en el manejo de
+								contingentes de 60 personas, coordinando grupos
+								de menores en viajes de egresados a Córdoba.
+							</div>
+						</div>
+					</div>
+					<div class="accordion-item">
+						<h2 class="accordion-header" id="flush-headingOne">
+							<button
+								class="accordion-button collapsed"
+								type="button"
+								data-bs-toggle="collapse"
+								data-bs-target="#flush-collapseOne"
+								aria-expanded="false"
+								aria-controls="flush-collapseOne"
+							>
+								DICIEMBRE 2017 – MARZO 2018: ENCARGADO DE HOTEL
+								EN BRASIL
+							</button>
+						</h2>
+						<div
+							id="flush-collapseOne"
+							class="accordion-collapse collapse"
+							aria-labelledby="flush-headingOne"
+							data-bs-parent="#accordionFlushExample"
+						>
+							<div class="accordion-body">
+								Me encargaba de la recreación y el ocio del
+								hotel Porto Sol en ingleses, Florianópolis.
+								Realizaba diversas actividades con los niños del
+								hotel principalmente y ciertos juegos para los
+								padres o huéspedes mayore
+							</div>
+						</div>
+					</div>
+					<div class="accordion-item">
+						<h2 class="accordion-header" id="flush-headingOne">
+							<button
+								class="accordion-button collapsed"
+								type="button"
+								data-bs-toggle="collapse"
+								data-bs-target="#flush-collapseOne"
+								aria-expanded="false"
+								aria-controls="flush-collapseOne"
+							>
+								DICIEMBRE 2016 – FEBRERO 2017: MOZO EN BRASIL
+							</button>
+						</h2>
+						<div
+							id="flush-collapseOne"
+							class="accordion-collapse collapse"
+							aria-labelledby="flush-headingOne"
+							data-bs-parent="#accordionFlushExample"
+						>
+							<div class="accordion-body">
+								Fue mi primera experiencia fuera del país.
+								Trabaje como mozo en el bar “E nois bar” de
+								cachoeira do bom jesus. Realizaba actividades de
+								atención al publico y limpieza del predio al
+								finalizar mi jornada.
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+
+        <aside>
+            <div class="porfolio-programacion container" id="porfolio">
+                <h3 class="porfolio-programacion-h3">Porfolio programacion web:</h3>
+                    
+                        <h6>Primer "pagina" con front-end: <a href="https://juanmatoniolo.github.io/1stpageweb/" target="_blank">Juana Bonita</a></h6>
+
+                    <h6>Cv online <a href=" https://juanmatoniolo.github.io/Cv/">Recursividad</a></h6>
+                    
+                        <h6>TP final de potrero digital front-end <a href="https://juanmatoniolo.github.io/2thPageWeb/" target="_blank">Critical Mambo</a></h6>
+                        <h6>TP final Analista en Sistemas UNR, lenguaje C. <a href="https://github.com/juanmatoniolo/wordle" target="_blank">wordle</a> </h6>
+                        <h6>Practica con JS <a href="https://calbasicjmt.netlify.app/" target="_blank">Calculadora</a></h6>
+                        <h6>Pagina que luego se convirtio en la plantilla de SmartPet <a href="https://minervasiteweb.netlify.app/" target="_blank">Minerva</a></h6>
+                        <h6>Practicas pequeñas de la cursada de back-end con "Potrero Digital" <a href="https://github.com/juanmatoniolo/Backend-Potrero" target="_blank">PHP BASICO</a></h6>
+                        <h6>TP final de back-end de potrero Digital <a href="#" target="_blank">Doggies Chajari</a></h6>
+                        <br>
+                        <h5>Emprendimiento personal: <a href="https://www.smartpetrosario.com.ar/" target="_blank">SmartPet Rosario</a></h5> <span>Mi primer pagina complementando front y back. Con esta pagina aprendi a realizar certificados SSL gratuitos, ya que el host en el que alojo misitio es  gratuito y no contaba con esta certificacion. Tambien aprendi a enlazar a traves de las DNS mi pagina con mi domino</span>
+                    
+
             </div>
-            <div class="col-sm-3">
-                <div class="row">
-                    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="./img/juanma-foo.png" height="90%" width="90%" class="d-block w-100"
-                                    alt="...">
-                            </div>
-                            <!--<div class="carousel-item">
-                                <img src="./img/juanma-photo2.png" height="90%" width="90%" class="d-block w-100"
-                                    alt="...">
-                            </div> -->
-                        </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
-                            data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
-                            data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="false"></span>
-                            <span class="visually-hidden">Next</span>
-                        </button>
-                    </div>
-                </div>
+        </aside>
 
-            </div>
-        </div>
-
-        <div class="linea">
-            <hr>
-        </div>
-
-        <div class="row">
-            <!-- Perfil-->
-            <div class="col-sm">
-                <div class="perfil">
-                    <h2>PERFIL</h2>
-                    <div>
-                        <p>Estoy en búsqueda de un buen ambiente laboral, en el cual se me permita crecer y aprender
-                            nuevos conocimientos.
-                            Soy una persona autodidacta y me adapto rápidamente al entorno y las tecnologías. Tengo un
-                            manejo de varias herramientas como Photoshop, paquete de office, Git y GitHub, sistemas
-                            operativos de Windows y algunos Linuxs, y un emprendimiento en el cual me encargo de
-                            arreglar computadoras.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="linea">
-            <hr>
-        </div>
-
-        <div class="row">
-            <!-- Formacion-->
-            <div class="col-sm">
-                <div class="formacion">
-                    <h2>FORMACION</h2>
-                    <ul>
-                        <li><strong>Universidad actual:</strong> Analista Universitario en Sistema UNR (2021 –
-                            actualidad)
-                        </li>
-                        <li><strong>Universidad en pausa:</strong> Derecho UNR – Abogacía (2015 a 2020) </li>
-                        <li><strong>Secundario completo: </strong> Instituto Marista D-87 (2008-2013)</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-
-        <div class="linea">
-            <hr>
-        </div>
-
-        <div class="row">
-            <!-- Otras formaciones-->
-            <div class="col-sm">
-                <div class="otras_formaciones">
-                    <h2>OTRAS FORMACIONES</h2>
-                    <ul>
-                        <li><strong>Programación back-end: </strong> En curso</li>
-                        <li><strong>CursandoArgentina Programa-2da etapa</strong> Cursando</li>
-                        <li><strong>Programación Front-end</strong> Finalizado</li>
-                        <li><strong>Windows desde la consola de comandos</strong> Finalizado 2021</li>
-                        <li> <strong>Excel basico</strong> Finalizado 2021</li>
-                        <li><strong>Reparación de PC</strong> Finalizado 2021</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-
-        <div class="linea">
-            <hr>
-        </div>
-
-        <div class="row">
-            <!-- Experiencia laboral-->
-            <div class="col-sm">
-                <div class="exp">
-                    <h2>EXPERIENCIA:</h2>
-                    <ul>
-                        <li>
-                            <h4><strong> SEPTIEMBRE 2022 – DICIEMBRE 2022: AUCKLAND TURISMO</strong></h4>
-                            <p>Coordinador de viajes de egresado, séptimo grado, a la ciudad de Villa Carlos Paz. En el mismo estaba a cargo del contingente y la realización de todas las actividades contractuales.</p>
-                        </li>
-                        <li>
-                            <h4><strong> ENERO 2022 – AGOSTO 2022: CENTRO DE SALUD DE LA PROVINCIA </strong></h4>
-                            <p>Mi tarea es recibir a las personas, corroborar su turno e indicarle por donde tiene
-                                que
-                                ir.
-                                Atención al público en general.</p>
-                        </li>
-                        <li>
-                            <h4><strong> JULIO 2021 – DICIEMBRE 2021: CAJERO DE UN BAR</strong></h4>
-                            <p>Realizaba la apertura y cierre de la caja del bar, los arqueos correspondientes y
-                                estaba
-                                a
-                                cargo de que los mozos cumplan con sus deberes.Tengo conocimiento del sistema
-                                Bruler.
-                            </p>
-                        </li>
-                        <li>
-                            <h4><strong>MARZO 2019 – DICIEMBRE 2020: PASANTE EN ESTUDIO JURIDICO DEL DR.DENTONE
-                                    LAUTARO
-                                </strong></h4>
-                            <p>A través de un programa de pasantías de la facultad me desempeñe en el
-                                estudiojurídico
-                                del
-                                abogado mencionado, desarrollando tareas administrativas dentro de laoficina y
-                                también
-                                de
-                                procuración en los tribunales de Rosario, Santa Fe. </p>
-                        </li>
-                        <li>
-                            <h4><strong> MARZO 2016 – MARZO 2019: AUCKLAND TURISMO S.R.L.</strong></h4>
-                            <p>Venta y coordinación de viajes de egresados.
-                                Tengo conocimiento y experiencia en el manejo de contingentes de 60 personas,
-                                coordinando
-                                grupos de menores en viajes de egresados a Córdoba.</p>
-                        </li>
-                        <li>
-                            <h4><strong> DICIEMBRE 2017 – MARZO 2018: ENCARGADO DE HOTEL EN BRASIL</strong></h4>
-                            <p> Me encargaba de la recreación y el ocio del hotel Porto Sol en ingleses,
-                                Florianópolis.
-                                Realizaba diversas actividades con los niños del hotel principalmente y ciertos
-                                juegos
-                                para
-                                los padres o huéspedes mayore</p>
-                        </li>
-                        <li>
-                            <h4><strong> DICIEMBRE 2016 – FEBRERO 2017: MOZO EN BRASIL</strong></h4>
-                            <p> Fue mi primera experiencia fuera del país. Trabaje como mozo en el bar “E nois bar” de cachoeira do bom jesus. Realizaba actividades de atención al publico y limpieza del predio al finalizar mi jornada. </p>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-
-        </div>
-    </div>
-
-</body>
-
+		<footer>
+			<!---VER SI PONER ALGO O NO PERO EN PRACTICAS SEO ES NECESARO-->
+		</footer>
+	</body>
 </html>
