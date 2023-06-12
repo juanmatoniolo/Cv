@@ -78,6 +78,27 @@ h6{
     margin: 16px;
 }
 
+
+
+/*=================     FOOTER      ==========================*/
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+.nav-item-footer{
+    text-align: center;
+
+    width: 17%;
+}
+
+.parrafo-footer{
+    width: 100%;
+}
+
+
 /*=========== ADAPTACION PARA CELULAR  ===========*/
 @media (max-width: 575px) {
 
@@ -117,5 +138,33 @@ p{
     object-fit: cover;
 
 }
+
+    /*=================     FOOTER      ==========================*/
+footer{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+    
+
+}
+.nav-item-footer{
+    text-align: center;
+    width: 30%;
+
+
+}
+
+.parrafo-footer{
+    width: 100%;
+}
+
+
+
+
+
+
 
 }
